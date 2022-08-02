@@ -1,0 +1,187 @@
+// import { createSlice } from "@reduxjs/toolkit";
+
+// const getThingsDoneSlice = createSlice({
+//   name: "getThingsDone",
+//   initialState: {
+//     ////////////////////////////////
+//     // User Login
+//     ////////////////////////////////
+
+//     //============================== Data to Send
+//     loginData: {
+//       email: "",
+//       password: "",
+//     },
+//     //============================== Data to Receive
+//     // token: {
+//     //   access: "",
+//     //   refresh: "",
+//     // },
+
+//     ////////////////////////////////
+//     // Registration of New User
+//     ////////////////////////////////
+
+//     //============================== Data to Send
+//     registerData: {
+//       name: "",
+//       email: "",
+//       password: "",
+//       password1: "",
+//     },
+
+//     //============================== Login Button state
+//     registerButton: true,
+//     ////////////////////////////////
+//     // Dashboard
+//     ////////////////////////////////
+//     //============================== Data to Receive
+//     allBoardsInfo: [],
+
+//     ////////////////////////////////
+//     // Project
+//     ////////////////////////////////
+//     //============================== Data to Receive
+//     toDoList: [],
+//     inProgressList: [],
+//     completedList: [],
+
+//     buttonToggle: true,
+//     ////////////////////////////////
+//     // CardModal
+//     ////////////////////////////////
+
+//     cardModalId: "",
+//     cardModalStatus: "",
+
+//     ////////////////////////////////
+//     // Error Handling
+//     ////////////////////////////////
+//     isError: false,
+//     errorMsg: "",
+//   },
+//   reducers: {
+//     ////////////////////////////////
+//     // User Login
+//     ////////////////////////////////
+//     //========== Store Login Data
+//     inputLoginDataEmail(state, action) {
+//       state.loginData.email = action.payload.email;
+//     },
+//     inputLoginDataPassword(state, action) {
+//       state.loginData.password = action.payload.password;
+//     },
+//     //========== Clear Login Data
+//     clearLoginData(state) {
+//       state.loginData = {
+//         email: "",
+//         password: "",
+//       };
+//     },
+//     //========== Store Login Response Data
+//     storeToken(state, action) {
+//       state.token = action.payload.token;
+//     },
+
+//     //========== Toggle Login Button
+//     toggleLoginButton(state) {
+//       state.loginButton = !state.loginButton;
+//     },
+
+//     ////////////////////////////////
+//     // Registration of New User
+//     ////////////////////////////////
+//     //========== Store Register Data
+//     inputRegisterDataEmail(state, action) {
+//       state.registerData.email = action.payload.email;
+//     },
+//     inputRegisterDataName(state, action) {
+//       state.registerData.name = action.payload.name;
+//     },
+//     inputRegisterDataPassword(state, action) {
+//       state.registerData.password = action.payload.password;
+//     },
+//     inputRegisterDataPassword1(state, action) {
+//       state.registerData.password1 = action.payload.password1;
+//     },
+//     //========== Clear Register Dataa
+//     clearRegisterData(state) {
+//       state.registerData = {
+//         name: "",
+//         email: "",
+//         password: "",
+//         password1: "",
+//       };
+//     },
+
+//     ////////////////////////////////
+//     // Dashboard
+//     ////////////////////////////////
+//     //============================== Store boards info
+//     storeAllBoardsInfo(state, action) {
+//       state.allBoardsInfo = action.payload.allBoardsInfo;
+//     },
+
+//     ////////////////////////////////
+//     // Project
+//     ////////////////////////////////
+//     //============================== Store boards info
+
+//     storeToDoList(state, action) {
+//       state.toDoList = action.payload.toDoList;
+//     },
+//     storeInProgressList(state, action) {
+//       state.inProgressList = action.payload.inProgressList;
+//     },
+//     storeCompletedList(state, action) {
+//       state.completedList = action.payload.completedList;
+//     },
+
+//     //============================== Toggle Button state in Project List
+
+//     toggleButtonToggle(state) {
+//       state.buttonToggle = !state.buttonToggle;
+//     },
+//     ////////////////////////////////
+//     // CardModal
+//     ////////////////////////////////
+
+//     /*
+
+//     cardModalData: {
+//       id: ""
+//       actionTitle: "",
+//       actionDesc: "",
+//       comments: [],
+//       status: "",
+//       createdBy: "",
+//       updatedBy: "",
+//       createdAt: "",
+//       updatedAt: "",
+//     },
+//     */
+//     openCardModal(state, action) {
+//       state.cardModalId = action.payload.cardModalId;
+//       state.cardModalStatus = action.payload.cardModalStatus;
+//     },
+//     closeCardModal(state) {},
+
+//     ////////////////////////////////
+//     // Error Handling
+//     ////////////////////////////////
+//     getError(state, action) {
+//       console.log("a");
+//       state.isError = true;
+//       state.errorMsg = action.payload.errorMsg;
+//       console.log("b");
+//     },
+//     resetError(state, action) {
+//       state.isError = false;
+//       state.errorMsg = "";
+//     },
+//   },
+// });
+
+// export const getThingsDoneActions = getThingsDoneSlice.actions;
+
+// export default getThingsDoneSlice.reducer;
